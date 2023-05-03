@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p></p>
+</body>
+
+<!-- Formulário basico -->
+<form method="POST" onsubmit="alert('Logado!')" target="_blank">
+
+    <label for="login">Login: <input type="text" name="login"></label>
+    <br>
+    <label for="age">Idade: <input type="number" name="age"></label>
+    <br>
+    <label for="password">Senha: <input type="password" name="password"></label>
+    <br>
+    <button type="submit">Logar!</button>
+</form>
+
+<hr>
+
+<br>
+<!-- tipos de inputs -->
+<form action="">
+    <label>Text: <input type="text"></label>
+    <br>
+    <label>Number: <input type="number" min="0" step="5" max="99"></label>
+    <br>
+    <label>Button: <input type="button" value="Enviar"></label>
+    <br>
+    <label>Range: <input type="range" value="Enviar"></label>
+    <br>
+    <label>Color: <input type="color"></label>
+    <br>
+    <label>Email: <input type="email"></label>
+    <br>
+    <label>Url: <input type="url"></label>
+    <br>
+    <label>Date: <input type="date"></label>
+    <br>
+    <label>Week: <input type="week"></label>
+    <br>
+    <label>Checkbox: <input type="checkbox"></label> <input type="checkbox"></label>
+    <br>
+    <label for="login">Radio: <input type="radio" name="aceita"></label> <input type="radio" name="aceita"></label>
+    <br>
+    <label>file: <input type="file" multiple></label>
+    <br>
+    <label>search: <input type="search"></label>
+    <br>
+</form>
+
+
+<hr>
+<!-- checkbox and radio -->
+
+<form action="" onsubmit="alert('Seu pedido será preparado!')"></form>
+<h3>Você selecionou: Pizza de Calabresa</h3>
+<p>Quais Opcionais voce deseja?</p>
+<input type="checkbox" name="opcional[]" id="queijo" disabled> + queijo <br>
+<input type="checkbox" name="opcional[]" id="callabresa"> + callabresa <br>
+<input type="checkbox" name="opcional[]" id="cebola"> + cebola <br>
+<input type="checkbox" name="opcional[]" id="azeitona"> + azeitona <br>
+<p>Borda Recehada?</p>
+<input type="radio" name="borda" value="sim">Sim<br>
+<input type="radio" name="borda" value="nao">Não<br>
+<p>Bebida</p>
+<input type="radio" name="bebida" value="Suco">Suco<br>
+<input type="radio" name="bebida" value="refrigetante">refrigetante<br>
+<input type="radio" name="bebida" value="água">água<br>
+<input type="radio" name="bebida" value="nenhum">nenhum<br><br>
+<button type="submit">Enviar pedido</button>
+
+</form>
+
+<hr>
+
+<!-- button -->
+<form action="">
+    <label for="login">Login: <input type="text" name="login"></label><br><br>
+    <label for="age">Idade: <input type="number" name="age"></label><br><br>
+    <label for="password">Senha: <input type="password" name="password"></label><br><br>
+    <button type="button">Clicável</button>
+    <button type="reset">Reset</button>
+    <button type="submit">submit!</button>
+</form>
+<hr>
+<br><br><br>
+<!-- select -->
+<form action="">
+    <label for="">Nome:<input type="text" name="" id=""></label><br><br>
+    <label for="">Cargo:
+        <select name="role" id="">
+            <option value="">Selecione um cargo</option>
+            <option value="1">Tech Lead</option>
+            <option value="2">Front-end</option>
+            <option value="3">Back-end</option>
+            <option value="4">Fullstack</option>
+        </select>
+    </label><br><br>
+    <label for="">Assunto:
+        <select name="role" id="">
+            <option value="">Selecione um assunto</option>
+            <option value="1">falta</option>
+            <option value="2">Demissão</option>
+            <option value="3">feriado</option>
+            <option value="4">Contra-cheque</option>
+        </select>
+    </label><br>
+</form>
+
+<hr>
+<br><br>
+<!-- Textarea -->
+
+<label for="">Mensagem:<textarea name="" id="" cols="30" rows="10"></textarea></label><br><br>
+<button>Enviar</button>
+
+</html>
