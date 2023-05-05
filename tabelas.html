@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        table thead th {
+            background-color: #157bad;
+            color: #fff;
+        }
+
+        table tr:nth-child(even) {
+            background-color: aquamarine;
+        }
+
+        table tr:hover td {
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="250">
+        <caption>Tabela de idade dos alunos Dio.me</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Wagner </td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>Michael </td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>João </td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Mario </td>
+                <td>26</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td rowspan="2">Total</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
